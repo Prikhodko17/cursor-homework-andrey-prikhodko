@@ -5,17 +5,25 @@ do {
 
 do {
     m = +prompt("Введіть число до якого ми будемо складати", 2);
-}while (m < n || m % 1 !== 0);
+}while (m % 1 !== 0);
     
 const skipPairs = confirm("Пропускать парные числа?");
 
 let summary = 0;
-
+if (m > n) {
 for (let i = n; i <= m; i++) {
     if (skipPairs && i % 2 == 0) {
         continue;
     }
     summary += i;
+}
+} else {
+    for (let i = n; i >= m; i--) {
+        if (skipPairs && i % 2 == 0) {
+            continue;
+        }
+        summary += i;
+    }
 }
 
 alert(`Сумма чисел між ${n} і ${m} складає ${summary}`)
