@@ -26,4 +26,4 @@ for (let i = n; i <= m; i++) {
     }
 }
 
-alert(`Сумма чисел між ${n} і ${m} складає ${summary}`)
+document.write(`Сумма чисел між ${n} і ${m} складає ${summary}`)
