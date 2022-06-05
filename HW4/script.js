@@ -32,7 +32,6 @@ console.log(pairs);
 // Повинен вийти вкладений масив виду: [["Олександр і Олена", "Теорія автоматів"], [...], [...]]
 
 
-
 function makePairsWithThemes (namePairs, themesTopic) {
     const pairsAndThemes = [];
     for (let i = 0; i < namePairs.length; i++) {
@@ -42,3 +41,32 @@ function makePairsWithThemes (namePairs, themesTopic) {
 }
 
 console.log(makePairsWithThemes(pairs, themes));
+
+// Зіставте оцінки(marks) зі студентом(students): [["Саша", 4], [...], [...]]
+
+function makeStudentsAndMarks (student, mark) {
+    const studentsAndMarks = [];
+    for (let i = 0; i < student.length; i++) {
+        studentsAndMarks.push([`${student[i]}, ${mark[i]}`])
+    }
+    return studentsAndMarks
+}
+
+console.log(makeStudentsAndMarks(students,marks));
+
+// Поставте кожній парі випадкову оцінку(від 1 до 5) за проєкт(тут функція буде нечистою, але не повинна мутувати массив):
+// [["Олександр і Олена", "Теорія автоматів", 5], [...], [...]]
+
+const pairsWithThemes = makePairsWithThemes(pairs, themes);
+
+function makeRandomMarks (pairs) {
+const pairsWithRandomMarks = [];
+
+for (let i = 0; i < pairs.length;i++) {
+    pairsWithRandomMarks.push(pairs[i])
+    pairsWithRandomMarks[i].push(Math.ceil(Math.random() * (5 - 1) + 1))
+}
+    return pairsWithRandomMarks
+}
+
+console.log(makeRandomMarks(pairsWithThemes));
