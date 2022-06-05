@@ -10,8 +10,9 @@ function getMaxDigit(number) {
             maxValue = e
         }
     })
-    return maxValue
+    return +maxValue
 }
+
 console.log(getMaxDigit(+prompt("Введіть число для 1 функції")))
 
 // Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та **. Використовуйте цикл
@@ -21,8 +22,15 @@ function exalt(number, elevate) {
     if (elevate === 0) {
         result = 1
         return result
+    } else if (elevate < 0) {
+        number = Math.abs(number)
+        let result = 1/number
+        result = result * 1/number
+        for (let i = 0; i < elevate - 1; i++) {
+            result = result * 1/number
+        }
+        return result
     } else {
-
         let result = number
         for (let i = 0; i < elevate - 1; i++) {
             result = result * number
@@ -30,7 +38,6 @@ function exalt(number, elevate) {
         return result
     }
 }
-
 
 console.log(exalt(+prompt("Введіть число"), +prompt("Введіть степінь")))
 
@@ -48,7 +55,7 @@ console.log(editName("vlad"))
 function tax(salary) {
     const taxes = 0.195
     result = salary * (1 - taxes)
-    return result
+    return result.toFixed(2)
 }
 
 console.log(tax(1000))
@@ -102,7 +109,7 @@ function getRandomPassword(length = 8) {
     return result
 }
 
-console.log(getRandomPassword(5))
+console.log(+getRandomPassword(5))
 
 // Створіть функцію, яка видаляє всі букви з речення. Приклад: deleteLetters('a', "blablabla") -> "blblbl"
 
