@@ -83,18 +83,27 @@ console.log(countLetter("a", "Ababab"))
 // Створіть функцію, яка конвертує долари в гривні та навпаки в залежності від наявності символа $ або UAH в рядку. 
 // Приклад: convertCurrency("100$") -> 2500 грн. або convertCurrency("2500UAH") -> 100$
 
-function convertCurrency(sum, currency = 25) {
-    let result
-    const data = sum.toUpperCase()
-    const cash = parseInt(sum)
-    if (data.includes('$') && !Number.isNaN(cash)) {
-        result = cash * currency
-    } else if (data.includes('UAH') && !Number.isNaN(cash)) {
-        result = cash / currency
-    } else {
-        result = 'Помилка: Конвертуються тільки $ або UAH'
-    }
-    return result
+function convertCurrency(data) {
+    const exchRate = 33
+    let message
+    value = data.toLowerCase()
+    if (
+        isNaN(parseInt(value)) || 
+        value
+          .replace(`${parseInt(value)}`, "")
+          .replace("$", "")
+          .replace("uah","").length > 0
+    ) { console.log("Введіть коректне значення")
+  }else if (value.includes("$")) {
+      message = `${parseInt(value)}$ = ${(parseInt(value) * exchRate).toFixed(2)}UAH`
+  } else if (value.includes("uah")) {
+      message = `${parseInt(value)}UAH = ${(parseInt(value) / exchRate).toFixed(
+        2
+      )}$`
+  } else {
+      console.log("Введіть коректну валюту")
+  }
+  return message
 }
 
 console.log(convertCurrency("2500 UAH"))
