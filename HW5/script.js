@@ -53,3 +53,71 @@ function getAverage(...numbers) {
 }
 
 console.log(getAverage(1,5,7,5,4))
+
+/*
+Створіть функцію getMedian(...numbers) – яка рахує медіану всіх переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ
+Приклад: getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) –> 23 
+Приклад: getMedian(1, 2, 3, 4) –> 2.5 Приклад: getMedian(1, 2, 3, 4, 5) –> 3
+*/
+
+function getMedian(...numbers) {
+    const intNumbers = numbers.filter(item => Number.isInteger(item))
+
+    if (intNumbers.length % 2 != 0) {
+        console.log(intNumbers[(intNumbers.length - 1)/2]);
+    }    else {
+        console.log((intNumbers[intNumbers.length / 2 - 1] + intNumbers[intNumbers.length / 2 ])/2);
+    }
+}
+
+getMedian(1,2,3,4,5)
+getMedian(1,2,3,4,5,6,7,8)
+/*
+Створіть функцію filterEvenNumbers(...numbers) – яка фільтрує парні числа передані як аргументи функції
+Приклад: filterEvenNumbers(1, 2, 3, 4, 5, 6) -> [1, 3, 5]
+*/
+
+function filterEvenNumbers(...numbers) {
+    const evenNumbers = []
+    numbers.forEach(num => {
+        if (num % 2 === 0)
+        evenNumbers.push(num)
+    })
+    return evenNumbers
+}
+
+console.log(filterEvenNumbers(1,2,3,4,5,6))
+
+/*
+Створіть функцію countPositiveNumbers(...numbers) – яка порахує кількість чисел більших 0
+Приклад: countPositiveNumbers(1, -2, 3, -4, -5, 6) -> 3
+*/
+
+function countPositiveNumbers(...numbers) {
+    const positiveNumbers = []
+    numbers.forEach(num => {
+        if (num > 0)
+        positiveNumbers.push(num)
+    })
+    return positiveNumbers.length
+}
+
+console.log(countPositiveNumbers(1,2,3,4,-5))
+
+/*
+Створіть функцію getDividedByFive(...numbers) – яка відфільтрує усі елементи в масиві та залишить тільки ті, які діляться на ціло на 5
+Приклад: getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) -> [55, 55]
+*/
+function getDividedByFive(...numbers) {
+    divideByFive = numbers.filter(num => num % 5 === 0)
+    return divideByFive
+}
+
+console.log(getDividedByFive(20,15,11,22,30,60));
+
+/*
+Створіть функцію replaceBadWords(string) – яка 1) розіб'є фразу на слова, 2) замінить погані слова на зірочки (*). 
+При вирішенні цього завдання необхідно розбити масив на слова за допомогою функції .split(" "),
+після чого масив необхідно буде склеїти .join(" ") Погані слова: shit та fuck. Передбачте можливість розширювати список цих слів у майбутньому.
+*/
+
