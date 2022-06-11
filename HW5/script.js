@@ -194,4 +194,4 @@ function generateCombinations(word) {
     }
 }
 
-    
+generateCombinations('man')
