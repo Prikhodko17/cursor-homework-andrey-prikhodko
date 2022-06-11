@@ -121,3 +121,77 @@ console.log(getDividedByFive(20,15,11,22,30,60));
 після чого масив необхідно буде склеїти .join(" ") Погані слова: shit та fuck. Передбачте можливість розширювати список цих слів у майбутньому.
 */
 
+function replaceBadWords(string, ...words) {
+    badWords = ['shit', 'fuck']
+    
+    words.forEach(word => {
+        if (badwords.indexOf(word) === -1)
+        badWords.push(word)
+    })
+    
+    result = string.split(' ')
+
+    final = result.map(res => {
+        word = res
+        badWords.forEach(bw => {
+            if (word.includes(bw)) 
+                word = word.replaceAll(bw, new Array (bw.length).fill('*').join(''))
+            })
+        return word
+        }).join(' ')
+return final
+    }
+
+    replaceBadWords("Are you fucking kidding?")    
+
+/*
+Створіть функцію divideByThree(word), яка розбиває кожне слово на умовні склади по 3 букви. Якщо букв менше трьох – не розбиває.
+Пробіли завжди видаляються. Рядок приводится до нижнього регістру. 
+Приклад: divideByThree("Commander) -> ["com", "man", "der"] 
+Приклад: divideByThree("live") -> ["liv", "e"]
+*/
+
+function divideByThree(word) {
+    const lettersOfWord = [...word.toLowerCase()].filter(letter =>  letter !== ' ')
+    const threeLetter = []
+    if (lettersOfWord.length < 3) {
+        console.log('Введіть слово більше 3 букв');
+    } else {
+
+    let i = Math.ceil(lettersOfWord.length / 3)
+
+    for (; i > 0; i--) {
+        threeLetter.push(lettersOfWord.splice(0,3).join(''))
+    }
+    }
+    return threeLetter
+}
+
+divideByThree('Commander')
+divideByThree('co')
+
+/*
+Створіть функцію generateCombinations(word), яка видасть всі можливі перестановки(унікальні, без повторень) букв в слові. 
+Для тестів не передавайте слова в яких більше 10 букв. Краще взагалі обмежити работу функції 10 буквами. 
+Приклад: generateCombinations("man") -> ["man", "mna", "amn", "anm", "nam", "nma"] Приклад: generateCombinations("ol") -> ["ol", "lo"]
+*/
+
+function generateCombinations(word) {
+    if (word.length > 10) {
+        console.log("Дуже довге слово")
+    } else if (word.length < 2) {
+        console.log(word);
+    } else {let allCombinations = [];
+        for (let i = 0; i < word.length; i++) {
+            let letter = word[i];
+            let shortWord = word.substr(0, i) + word.substr(i + 1, word.length - 1);
+            let shortWordArray = generateCombinations(shortWord);
+            for (let j = 0; j < shortWordArray.length; j++) {
+                allCombinations.push(letter + shortWordArray[j]);
+            }
+        }
+        return allCombinations;
+    }
+}
+
+    
