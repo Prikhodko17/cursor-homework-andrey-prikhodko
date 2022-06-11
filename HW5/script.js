@@ -175,13 +175,13 @@ divideByThree('co')
 Для тестів не передавайте слова в яких більше 10 букв. Краще взагалі обмежити работу функції 10 буквами. 
 Приклад: generateCombinations("man") -> ["man", "mna", "amn", "anm", "nam", "nma"] Приклад: generateCombinations("ol") -> ["ol", "lo"]
 */
-
 function generateCombinations(word) {
-    if (word.length > 10) {
-        console.log("Дуже довге слово")
-    } else if (word.length < 2) {
-        console.log(word);
-    } else {let allCombinations = [];
+    if (word.length < 2) {
+        return [word];
+    } else if (word.length > 10) {
+        return "Дуже довге слово"
+    } else {
+        let allCombinations = [];
         for (let i = 0; i < word.length; i++) {
             let letter = word[i];
             let shortWord = word.substr(0, i) + word.substr(i + 1, word.length - 1);
