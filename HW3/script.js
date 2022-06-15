@@ -20,16 +20,14 @@ console.log(getMaxDigit(+prompt("Введіть число для 1 функці
 
 function exalt(number, elevate) {
     if (elevate === 0) {
-        result = 1
-        return result
-    } else if (elevate < 0) {
-        number = Math.abs(number)
-        let result = 1/number
-        result = result * 1/number
-        for (let i = 0; i < elevate - 1; i++) {
-            result = result * 1/number
-        }
-        return result
+        return 1
+    } else if (elevate < 0) { 
+        let result = 1;
+        for(let i = elevate;i < 0; i++){
+        result*=number
+    }
+    result=1/result
+    return result
     } else {
         let result = number
         for (let i = 0; i < elevate - 1; i++) {
@@ -53,8 +51,8 @@ console.log(editName("vlad"))
 // Створити функцію, яка вираховує суму, що залишається після оплати податку від зарабітньої плати. (Податок = 18% + 1.5% -> 19.5%). Приклад: 1000 -> 805
 
 function tax(salary) {
-    const taxes = 0.195
-    result = salary * (1 - taxes)
+    const taxes = 19.5
+    result = salary - salary * taxes / 100;
     return result.toFixed(2)
 }
 
@@ -92,7 +90,8 @@ function convertCurrency(data) {
         value
           .replace(`${parseInt(value)}`, "")
           .replace("$", "")
-          .replace("uah","").length > 0
+          .replace("uah","")
+          .replace(" ","").length > 0
     ) { console.log("Введіть коректне значення")
   }else if (value.includes("$")) {
       message = `${parseInt(value)}$ = ${(parseInt(value) * exchRate).toFixed(2)}UAH`
@@ -115,7 +114,10 @@ function getRandomPassword(length = 8) {
     for (let i = 0; i < length; i++) {
         result += Math.floor(Math.random() * 10)
     }
-    return result
+    if (result[0] === '0') {
+        return getRandomPassword(length)
+    } else {
+    return result}
 }
 
 console.log(+getRandomPassword(5))
@@ -141,7 +143,7 @@ console.log(isPalindrome("мадам"));
 const deleteDuplicateLetter = (text) => {
     let str = text.toLowerCase();
     for (let i = 0; i < str.length; i++) {
-        if (i != str.lastIndexOf(str[i])) {
+        if (i !== str.lastIndexOf(str[i])) {
             str = str.split(str[i]).join('');
             i--;
         }
