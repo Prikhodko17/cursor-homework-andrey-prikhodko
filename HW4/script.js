@@ -9,12 +9,18 @@ const boys = [];
 
 const girls = [];
 
+function division (students) {
+
 students.forEach(function(e) {
     if (e[e.length - 1] === "а") {
         girls.push(e)
    } else {  boys.push(e)}
 }
 )
+}
+
+division(students)
+
 
 function makePairs (boysArr, girlsArr) {
     const pairs = []
@@ -35,7 +41,7 @@ console.log(pairs);
 function makePairsWithThemes (namePairs, themesTopic) {
     const pairsAndThemes = [];
     for (let i = 0; i < namePairs.length; i++) {
-        pairsAndThemes.push([`${namePairs[i]}, ${themesTopic[i]}`])
+        pairsAndThemes.push([namePairs[i], themesTopic[i]].join(','))
     }
     return pairsAndThemes
 }
@@ -63,7 +69,7 @@ function makeRandomMarks (pairs) {
 const pairsWithRandomMarks = [];
 
 for (let i = 0; i < pairs.length;i++) {
-    pairsWithRandomMarks.push(pairs[i])
+    pairsWithRandomMarks.push(pairs[i].split(','))
     pairsWithRandomMarks[i].push(Math.ceil(Math.random() * (5 - 1) + 1))
 }
     return pairsWithRandomMarks
