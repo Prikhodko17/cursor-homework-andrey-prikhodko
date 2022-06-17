@@ -4,7 +4,7 @@
 
 function getRandomArray(length, min, max) {
     let arr = []
-    if (min >= max) {
+    if (min >= max)  {
     return "Мінімальне значення не може бути більше максимального"
 } else {
 
