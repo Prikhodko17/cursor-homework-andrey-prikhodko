@@ -80,7 +80,7 @@ getMedian(1,2,3,4,5,6,7,8)
 function filterEvenNumbers(...numbers) {
     const evenNumbers = []
     numbers.forEach(num => {
-        if (num % 2 === 0)
+        if (num % 2 !== 0)
         evenNumbers.push(num)
     })
     return evenNumbers
@@ -142,7 +142,7 @@ function replaceBadWords(string, ...words) {
 return final
     }
 
-    replaceBadWords("Are you fucking kidding?")    
+console.log(replaceBadWords("Are you fucking kidding?"))  
 
 /*
 Створіть функцію divideByThree(word), яка розбиває кожне слово на умовні склади по 3 букви. Якщо букв менше трьох – не розбиває.
@@ -167,8 +167,8 @@ function divideByThree(word) {
     return threeLetter
 }
 
-divideByThree('Commander')
-divideByThree('co')
+console.log(divideByThree('Commander'))
+console.log(divideByThree('co'))
 
 /*
 Створіть функцію generateCombinations(word), яка видасть всі можливі перестановки(унікальні, без повторень) букв в слові. 
@@ -194,4 +194,4 @@ function generateCombinations(word) {
     }
 }
 
-generateCombinations('man')
+console.log(generateCombinations('man'))
