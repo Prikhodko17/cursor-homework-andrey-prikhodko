@@ -4,13 +4,13 @@
 
 function getRandomArray(length, min, max) {
     let arr = []
-    if (min > max) {
+    if (min >= max) {
     return "Мінімальне значення не може бути більше максимального"
 } else {
 
 for (let i = 0; i < length;i++) {
     
-    arr.push(Math.ceil(Math.random() * (max - min) + 1))
+    arr.push(Math.floor(Math.random() * (max + 1 - min) + min))
 }
 }
     return arr
@@ -63,7 +63,7 @@ console.log(getAverage(1,5,7,5,4))
 function getMedian(...numbers) {
     const intNumbers = numbers.filter(item => Number.isInteger(item))
 
-    if (intNumbers.length % 2 != 0) {
+    if (intNumbers.length % 2 !== 0) {
         console.log(intNumbers[(intNumbers.length - 1)/2]);
     }    else {
         console.log((intNumbers[intNumbers.length / 2 - 1] + intNumbers[intNumbers.length / 2 ])/2);
