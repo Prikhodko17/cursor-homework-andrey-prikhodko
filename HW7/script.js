@@ -54,4 +54,4 @@ function getMySalary() {
     }.bind(this), 10000)
 }
 
-getMySalary.call(ukraine)
+console.log(getMySalary.call(ukraine))
