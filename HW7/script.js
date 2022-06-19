@@ -35,7 +35,7 @@ function getTotalTaxes(country) {
     return this.tax * this.middleSalary * this.vacancies
 }
 
-console.log(getMiddleTaxes.call(litva));
+console.log(getTotalTaxes.call(litva));
 
 /*
 Створіть функцію getMySalary(country) – яка буде писати в консоль об'єкт виду: { salary: number, taxes: number, profit: number } кожні 10 секунд. 
