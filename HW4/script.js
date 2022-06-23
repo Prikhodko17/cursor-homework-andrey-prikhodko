@@ -49,11 +49,13 @@ function makePairsWithThemes (namePairs, themesTopic) {
 console.log(makePairsWithThemes(pairs, themes));
 
 // Зіставте оцінки(marks) зі студентом(students): [["Саша", 4], [...], [...]]
+let c 
 
 function makeStudentsAndMarks (student, mark) {
     const studentsAndMarks = [];
     for (let i = 0; i < student.length; i++) {
-        studentsAndMarks.push([`${student[i]}, ${mark[i]}`])
+        studentsAndMarks.push([student[i]])
+        studentsAndMarks[i].push(mark[i])
     }
     return studentsAndMarks
 }
