@@ -48,8 +48,8 @@ function getMySalary() {
     let obj = {}
     setInterval(function () {
         obj.salary = Number((Math.random() * (2000 - 1500) + 1500).toFixed(2))
-        obj.taxes = this.tax
-        obj.profit =  Number((obj.salary - obj.salary * obj.taxes).toFixed(2))
+        obj.taxes = Number((obj.salary * this.tax).toFixed(2))
+        obj.profit =  Number((obj.salary - obj.taxes).toFixed(2))
         console.log(obj);
     }.bind(this), 10000)
 }
