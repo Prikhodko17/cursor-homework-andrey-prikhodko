@@ -10,7 +10,7 @@ const litva = { tax: 0.15, middleSalary: 1509, vacancies: 1114 }
 */
 
 function getMyTaxes(salary) {
-    return salary - salary * this.tax
+    return  salary * this.tax
 }
 
 console.log(getMyTaxes.call(ukraine, 3000));
@@ -48,7 +48,7 @@ function getMySalary() {
     let obj = {}
     setInterval(function () {
         obj.salary = Number((Math.random() * (2000 - 1500) + 1500).toFixed(2))
-        obj.taxes = Number((obj.salary * this.tax).toFixed(2))
+        obj.taxes = Number((getMyTaxes.call(this, obj.salary)).toFixed(2))
         obj.profit =  Number((obj.salary - obj.taxes).toFixed(2))
         console.log(obj);
     }.bind(this), 10000)
