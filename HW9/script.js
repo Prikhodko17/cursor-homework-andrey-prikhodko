@@ -1,11 +1,15 @@
+let fin = document.querySelector('.result')
+
+
 function getRandomInt() {
     return Math.floor(Math.random() * 256);
   }
 
 function generateBlocks () {
+    if (fin.innerHTML !== '')  fin.innerHTML = ''
     const block = document.createElement("div");
     block.className = "box";
-    document.body.append(block);
+    fin.append(block);
 
     for (let el = 0; el < 25; el++) {
         const elem = document.createElement("div");
@@ -18,9 +22,10 @@ function generateBlocks () {
 
 
 function generateBlocksInterval () {
+    if (fin.innerHTML !== '')  fin.innerHTML = ''
     const block = document.createElement("div");
     block.className = "box";
-    document.body.append(block);
+    fin.append(block);
 
     for (let el = 0; el < 25; el++) {
         const elem = document.createElement("div");
