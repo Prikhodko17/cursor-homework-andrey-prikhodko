@@ -8,11 +8,7 @@ class Students {
     }
 
     get getMarks() {
-        if (this.dismiss) {
-            return null            
-        } else {
-        return this.marks
-        }
+        return this.dismiss ? null : this.marks
     }
 
     set setMarks(number) {
@@ -24,9 +20,11 @@ class Students {
     }
 
     getAverageMark() {
-       return this.marks.reduce((sum, curr) => { 
+       if (this.dismiss) {
+        return null            
+    } else {return this.marks.reduce((sum, curr) => { 
             return sum + curr / this.marks.length
-        }, 0)
+        }, 0)}
     }
     
     getInfo() {
@@ -79,7 +77,7 @@ console.log(ostap.getMarks)
 
 console.log(ostap.getAverageMark())
 
-console.log(ostap.dismissed())
+ostap.dismissed()
 
 ostap.setMarks = 5
 
@@ -89,14 +87,4 @@ console.log(ostap.getMarks)
 
 const taras = new BudgetStudents('Вищої Школи Психотерапії м.Одеса', 'Студент 1го курсу', 'Тарас Бендер', [5, 4, 4, 5], 1400)
 
-/*console.log(taras.getScholarship())
-
-taras.dismissed()
-
-console.log(taras.getScholarship())
-
-taras.recover()
-
-taras.setMarks = 1
-
-console.log(taras.getScholarship())*/
+console.log(taras);
