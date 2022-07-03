@@ -64,14 +64,14 @@ function getMedian(...numbers) {
     const intNumbers = numbers.filter(item => Number.isInteger(item))
 
     if (intNumbers.length % 2 !== 0) {
-        console.log(intNumbers[(intNumbers.length - 1)/2]);
+        return intNumbers[(intNumbers.length - 1)/2];
     }    else {
-        console.log((intNumbers[intNumbers.length / 2 - 1] + intNumbers[intNumbers.length / 2 ])/2);
+        return (intNumbers[intNumbers.length / 2 - 1] + intNumbers[intNumbers.length / 2 ])/2;
     }
 }
 
-getMedian(1,2,3,4,5)
-getMedian(1,2,3,4,5,6,7,8)
+console.log(getMedian(1,2,3,4,5))
+console.log(getMedian(1,2,3,4,5,6,7,8))
 /*
 Створіть функцію filterEvenNumbers(...numbers) – яка фільтрує парні числа передані як аргументи функції
 Приклад: filterEvenNumbers(1, 2, 3, 4, 5, 6) -> [1, 3, 5]
@@ -80,9 +80,12 @@ getMedian(1,2,3,4,5,6,7,8)
 function filterEvenNumbers(...numbers) {
     const evenNumbers = []
     numbers.forEach(num => {
+        if (typeof(num) !== 'number') {
+            console.log('Error');
+        } else {
         if (num % 2 !== 0)
         evenNumbers.push(num)
-    })
+    }})
     return evenNumbers
 }
 
@@ -96,9 +99,12 @@ console.log(filterEvenNumbers(1,2,3,4,5,6))
 function countPositiveNumbers(...numbers) {
     const positiveNumbers = []
     numbers.forEach(num => {
+        if (typeof(num) !== 'number') {
+            console.log('Error');
+        } else {
         if (num > 0)
         positiveNumbers.push(num)
-    })
+    }})
     return positiveNumbers.length
 }
 
@@ -109,8 +115,17 @@ console.log(countPositiveNumbers(1,2,3,4,-5))
 Приклад: getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) -> [55, 55]
 */
 function getDividedByFive(...numbers) {
-    divideByFive = numbers.filter(num => num % 5 === 0)
-    return divideByFive
+    let arr = []
+    numbers.forEach(el => {
+        if (typeof(el) !== 'number') {
+            console.log('Error');
+        } else {
+            arr.push(el)
+        }
+        return arr
+    })
+    arr = arr.filter(num => num % 5 === 0)
+    return arr
 }
 
 console.log(getDividedByFive(20,15,11,22,30,60));
@@ -122,20 +137,20 @@ console.log(getDividedByFive(20,15,11,22,30,60));
 */
 
 function replaceBadWords(string, ...words) {
-    badWords = ['shit', 'fuck']
+    const badWords = ['shit', 'fuck']
     
     words.forEach(word => {
-        if (badwords.indexOf(word) === -1)
+        if (badWords.indexOf(word) === -1)
         badWords.push(word)
     })
     
-    result = string.split(' ')
+    const result = string.split(' ')
 
-    final = result.map(res => {
-        word = res
+    const final = result.map(res => {
+        let word = res
         badWords.forEach(bw => {
-            if (word.includes(bw)) 
-                word = word.replaceAll(bw, new Array (bw.length).fill('*').join(''))
+            if (word.toLowerCase().includes(bw)) 
+                word = word.toLowerCase().replaceAll(bw, new Array (bw.length).fill('*').join(''))
             })
         return word
         }).join(' ')
@@ -190,7 +205,7 @@ function generateCombinations(word) {
                 allCombinations.push(letter + shortWordArray[j]);
             }
         }
-        return allCombinations;
+        return allCombinations.filter((val, ind, arr) => arr.indexOf(val) === ind);;
     }
 }
 

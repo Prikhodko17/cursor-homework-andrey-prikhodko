@@ -22,7 +22,7 @@ letters.forEach (el => {
 
 document.onkeydown = function (event) {
     audios.forEach(el => {
-       if (event.keyCode == el.id) {
+        if (event.keyCode == el.id) {
         letters.forEach(e => {
         if (e.attributes[1].textContent === el.id) {
         let sound = event.keyCode
@@ -33,7 +33,6 @@ document.onkeydown = function (event) {
         }, 800)
         elem.play(0)
         }
-        
         })
        }
     }
