@@ -1,0 +1,53 @@
+body {
+    background: url(img/.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white
+}
+
+.content {
+    height: 800px;
+    width: 800px;
+    margin: auto;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    border: 5px solid aqua;
+    margin: 5px 5px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    margin-left: 50px
+}
+
+p {
+    text-align: center;
+    margin: 1px 1px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+button {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  select { 
+    background-position: 95% 50%;
+    border-radius: 5px;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 30px;
+    } 
