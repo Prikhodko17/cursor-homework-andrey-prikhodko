@@ -2,6 +2,8 @@ import {calcMaxValue, summaryNum, getMaxDigit, division, getModa, getSubjects, g
 
 import "./styles/style.css"
 
+import "./img/back.jpg"
+
 // HW 1 
 console.log(calcMaxValue());
 // HW 2

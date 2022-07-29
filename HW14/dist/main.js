@@ -16,7 +16,7 @@
   \********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".box{\\r\\n    width: 250px;\\r\\n    height: 250px;\\r\\n    display: flex;\\r\\n    flex-wrap: wrap;\\r\\n}\\r\\n\\r\\n.elem{\\r\\n    width: 50px;\\r\\n    height: 50px;\\r\\n}\\r\\n\\r\\n.result {\\r\\n    width: 250px;\\r\\n    height: 250px;\\r\\n}\\r\\n\\r\\n.letters {\\r\\n    position: relative;\\r\\n    max-width: min-content;\\r\\n    display: flex;\\r\\n    align-items: stretch;\\r\\n    margin: 20% auto;\\r\\n    padding: 5px;\\r\\n}\\r\\n\\r\\n.letter {\\r\\n    margin: 10px 10px;\\r\\n    width: 100px;\\r\\n    height: 100px;\\r\\n    text-align: center;\\r\\n    justify-content: center;\\r\\n}\\r\\n\\r\\n.txt {\\r\\n    text-align: center;\\r\\n    justify-self: center;\\r\\n    margin: 30px;\\r\\n    font-size: 32px;\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    color: #D2EDE8;\\r\\n}\\r\\n\\r\\n.active {\\r\\n    border: 5px solid #6DEDD3;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://cursor_webpack/./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".box{\\r\\n    width: 250px;\\r\\n    height: 250px;\\r\\n    display: flex;\\r\\n    flex-wrap: wrap;\\r\\n}\\r\\n\\r\\n.elem{\\r\\n    width: 50px;\\r\\n    height: 50px;\\r\\n}\\r\\n\\r\\n.result {\\r\\n    width: 250px;\\r\\n    height: 250px;\\r\\n}\\r\\n\\r\\n.letters {\\r\\n    position: relative;\\r\\n    max-width: min-content;\\r\\n    display: flex;\\r\\n    align-items: stretch;\\r\\n    margin: 20% auto;\\r\\n    padding: 5px;\\r\\n}\\r\\n\\r\\n.letter {\\r\\n    margin: 10px 10px;\\r\\n    width: 100px;\\r\\n    height: 100px;\\r\\n    text-align: center;\\r\\n    justify-content: center;\\r\\n}\\r\\n\\r\\n.txt {\\r\\n    text-align: center;\\r\\n    justify-self: center;\\r\\n    margin: 30px;\\r\\n    font-size: 32px;\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    color: #D2EDE8;\\r\\n}\\r\\n\\r\\n.active {\\r\\n    border: 5px solid #6DEDD3;\\r\\n}\\r\\n\\r\\nbody {\\r\\n    background-color: #6DEDD3;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://cursor_webpack/./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://cursor_webpack/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/img/back.jpg":
+/*!**************************!*\
+  !*** ./src/img/back.jpg ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"34f9ceffc30bc9d969d3cef4f5c8fd0a.jpg\");\n\n//# sourceURL=webpack://cursor_webpack/./src/img/back.jpg?");
 
 /***/ }),
 
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n\r\n\r\n\r\n\r\n// HW 1 \r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.calcMaxValue)());\r\n// HW 2\r\n(0,_functions__WEBPACK_IMPORTED_MODULE_0__.summaryNum)()\r\n\r\n// HW 3\r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.getMaxDigit)(+prompt(\"Введіть число для 1 функції\")))\r\n\r\n// HW 4 \r\n\r\nconst students = [\"Олександр\", \"Ігор\", \"Олена\", \"Іра\", \"Олексій\", \"Світлана\"]\r\nconst arrBoys = []\r\nconst arrGirls = []\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.division)(students, arrBoys, arrGirls)\r\nconsole.log(arrBoys)\r\nconsole.log(arrGirls)\r\n\r\n// HW 5\r\n\r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.getModa)(1,3,4,5,5,6))\r\n\r\n// HW 6\r\n\r\nconst arrStudents = [{\r\n    name: \"Tanya\",\r\n    course: 3,\r\n    subjects: {\r\n      math: [4, 4, 3, 4],\r\n      algorithms: [3, 3, 3, 4, 4, 4],\r\n      data_science: [5, 5, 3, 4]\r\n    }\r\n  }, {\r\n    name: \"Victor\",\r\n    course: 4,\r\n    subjects: {\r\n      physics: [5, 5, 5, 3],\r\n      economics: [2, 3, 3, 3, 3, 5],\r\n      geometry: [5, 5, 2, 3, 5]\r\n    }\r\n  }, {\r\n    name: \"Anton\",\r\n    course: 2,\r\n    subjects: {\r\n      statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5],\r\n      english: [5, 3],\r\n      cosmology: [5, 5, 5, 5]\r\n    }\r\n  }];\r\n\r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.getSubjects)(arrStudents[0]))\r\n\r\n// HW 7\r\nconst ukraine = { tax: 0.195, middleSalary: 1789, vacancies: 11476 }\r\n\r\nconsole.log(_functions__WEBPACK_IMPORTED_MODULE_0__.getMyTaxes.call(ukraine, 3000))\r\n\r\n// HW 8 \r\n\r\nconst ostap = new _functions__WEBPACK_IMPORTED_MODULE_0__.Students('Вищої Школи Психотерапії м.Одеса', 'Студент 1го курсу', 'Остап Бендер', [5, 4, 4, 5])\r\n\r\nconsole.log(ostap)\r\n\r\n// HW 9\r\n\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.generateBlocksInterval)()\r\n\r\n// Hw 10 \r\n\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.getRandomChinese)(4).then((resolve) => console.log(resolve)).catch(err => {console.log(err);})\r\n\r\n// HW 11 \r\n\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.getPlanets) ()\r\n\r\n// HW 12\r\n\r\nconst idGenerator = (0,_functions__WEBPACK_IMPORTED_MODULE_0__.createIdGenerator)()\r\n\r\nconsole.log(idGenerator.next().value);\r\nconsole.log(idGenerator.next().value);\r\nconsole.log(idGenerator.next().value);\r\nconsole.log(idGenerator.next().value);\n\n//# sourceURL=webpack://cursor_webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _img_back_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/back.jpg */ \"./src/img/back.jpg\");\n\r\n\r\n\r\n\r\n\r\n\r\n// HW 1 \r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.calcMaxValue)());\r\n// HW 2\r\n(0,_functions__WEBPACK_IMPORTED_MODULE_0__.summaryNum)()\r\n\r\n// HW 3\r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.getMaxDigit)(+prompt(\"Введіть число для 1 функції\")))\r\n\r\n// HW 4 \r\n\r\nconst students = [\"Олександр\", \"Ігор\", \"Олена\", \"Іра\", \"Олексій\", \"Світлана\"]\r\nconst arrBoys = []\r\nconst arrGirls = []\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.division)(students, arrBoys, arrGirls)\r\nconsole.log(arrBoys)\r\nconsole.log(arrGirls)\r\n\r\n// HW 5\r\n\r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.getModa)(1,3,4,5,5,6))\r\n\r\n// HW 6\r\n\r\nconst arrStudents = [{\r\n    name: \"Tanya\",\r\n    course: 3,\r\n    subjects: {\r\n      math: [4, 4, 3, 4],\r\n      algorithms: [3, 3, 3, 4, 4, 4],\r\n      data_science: [5, 5, 3, 4]\r\n    }\r\n  }, {\r\n    name: \"Victor\",\r\n    course: 4,\r\n    subjects: {\r\n      physics: [5, 5, 5, 3],\r\n      economics: [2, 3, 3, 3, 3, 5],\r\n      geometry: [5, 5, 2, 3, 5]\r\n    }\r\n  }, {\r\n    name: \"Anton\",\r\n    course: 2,\r\n    subjects: {\r\n      statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5],\r\n      english: [5, 3],\r\n      cosmology: [5, 5, 5, 5]\r\n    }\r\n  }];\r\n\r\nconsole.log((0,_functions__WEBPACK_IMPORTED_MODULE_0__.getSubjects)(arrStudents[0]))\r\n\r\n// HW 7\r\nconst ukraine = { tax: 0.195, middleSalary: 1789, vacancies: 11476 }\r\n\r\nconsole.log(_functions__WEBPACK_IMPORTED_MODULE_0__.getMyTaxes.call(ukraine, 3000))\r\n\r\n// HW 8 \r\n\r\nconst ostap = new _functions__WEBPACK_IMPORTED_MODULE_0__.Students('Вищої Школи Психотерапії м.Одеса', 'Студент 1го курсу', 'Остап Бендер', [5, 4, 4, 5])\r\n\r\nconsole.log(ostap)\r\n\r\n// HW 9\r\n\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.generateBlocksInterval)()\r\n\r\n// Hw 10 \r\n\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.getRandomChinese)(4).then((resolve) => console.log(resolve)).catch(err => {console.log(err);})\r\n\r\n// HW 11 \r\n\r\n;(0,_functions__WEBPACK_IMPORTED_MODULE_0__.getPlanets) ()\r\n\r\n// HW 12\r\n\r\nconst idGenerator = (0,_functions__WEBPACK_IMPORTED_MODULE_0__.createIdGenerator)()\r\n\r\nconsole.log(idGenerator.next().value);\r\nconsole.log(idGenerator.next().value);\r\nconsole.log(idGenerator.next().value);\r\nconsole.log(idGenerator.next().value);\n\n//# sourceURL=webpack://cursor_webpack/./src/index.js?");
 
 /***/ })
 
@@ -181,6 +191,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fun
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +217,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fun
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

@@ -45,3 +45,7 @@
 .active {
     border: 5px solid #6DEDD3;
 }
+
+body {
+    background-image: url(./img/back.jpg)
+}
