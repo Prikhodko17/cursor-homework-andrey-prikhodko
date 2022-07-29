@@ -1,3 +1,7 @@
+body {
+    background-size: auto;
+}
+
 .box{
     width: 250px;
     height: 250px;
@@ -46,6 +50,3 @@
     border: 5px solid #6DEDD3;
 }
 
-body {
-    background-image: url(./img/back.jpg)
-}

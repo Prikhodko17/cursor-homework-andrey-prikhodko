@@ -2,7 +2,9 @@ import {calcMaxValue, summaryNum, getMaxDigit, division, getModa, getSubjects, g
 
 import "./styles/style.css"
 
-import "./img/back.jpg"
+import backImage from  "./img/back.jpg"
+
+document.body.style.backgroundImage= `url('${backImage}')`
 
 // HW 1 
 console.log(calcMaxValue());
