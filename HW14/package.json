@@ -12,6 +12,7 @@
   "author": "Andrey Prikhodko",
   "license": "ISC",
   "dependencies": {
-    "ramda": "^0.28.0"
+    "ramda": "^0.28.0",
+    "webpack": "^5.74.0"
   }
 }
